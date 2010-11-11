@@ -1,0 +1,10 @@
+*.class
+*.swp
+.DS_Store
+.metadata
+bin
+bin/*
+doc
+gen
+gen/*
+

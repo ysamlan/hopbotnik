@@ -28,7 +28,7 @@ public class HoptoadNotifier implements HoptoadNotify {
 	}
 
 	private void err(final HoptoadNotice notice, final Exception e) {
-        Log.e("scvngr-hoptoad-notifier",
+        Log.e("hoptoad-notifier",
                 "Problem writing error log to hoptoad", e);
 	}
 

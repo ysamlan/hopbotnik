@@ -15,9 +15,12 @@ To use Hopbotnik, create a `HoptoadNotice` with a `HoptoadNoticeBuilder`, passin
 	try {
 		doSomething();
 	} catch (JsonInitializationException e) {
-	    HoptoadNotice notice = new HoptoadNoticeBuilder(HOPTOAD_KEY, e, "production_env").newNotice();
+	    HoptoadNotice notice = new HoptoadNoticeBuilder(HOPTOAD_KEY, e, "environment-name").newNotice();
 		new HoptoadNotifier().notifyInBackground(notice);
 	}
+
+You'll also need to make sure your app has permission to access the Internet so it can send the notices to Hoptoad. if you don't already have it, you'll need this line in your app's `AndroidManifest.xml` file, under the `<manifest>` element:
+	<uses-permission android:name="android.permission.INTERNET" />
 
 Licensing
 -----------------------------------------------

@@ -40,7 +40,7 @@ public class NoticeApi2 {
       {
         tag("environment-name", notice.getEnvironment());
       }
-      end("server_environment");
+      end("server-environment");
 		}
 		end("notice");
 	}
